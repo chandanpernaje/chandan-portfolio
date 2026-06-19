@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandan Kumar P | Portfolio</title>
+  <meta name="description" content="Portfolio of Chandan Kumar P — Full Stack Developer & ML Engineer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <canvas id="stars"></canvas>
+
+  <!-- Navbar -->
+  <header id="navbar">
+    <nav class="container">
+      <div class="logo">CP</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn" id="menuBtn"><i data-lucide="menu"></i></button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="container home-content">
+        <p class="welcome-tag">WELCOME TO MY PORTFOLIO</p>
+        <h1 class="home-name">
+          Hi, I'm <span class="cyan">Chandan</span><br>
+          <span class="purple">Kumar P</span>
+        </h1>
+        <div class="home-actions">
+          <a href="#projects" class="btn btn-purple">View Projects</a>
+          <a href="/Chandan_Kumar_Resume.pdf" class="btn btn-outline-w" download>Download Resume</a>
+        </div>
+        <div class="home-socials">
+          <a href="https://github.com/chandanpernaje" target="_blank"><i data-lucide="github"></i></a>
+          <a href="#" target="_blank"><i data-lucide="linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2 class="sec-title"><span>About</span> <span class="cyan">Me</span></h2>
+        <p class="sec-sub">Passionate about building intelligent systems and beautiful web experiences</p>
+        <div class="about-grid">
+          <div class="about-img-col">
+            <div class="about-img-box">
+              <img src="/src/assets/profile.png" alt="Chandan Kumar P">
+            </div>
+          </div>
+          <div class="about-card">
+            <p>I'm Chandan Kumar P, a hardworking and driven MCA graduate from Vivekananda College of Engineering and Technology (VTU). I'm passionate about Full Stack Development and Machine Learning, with hands-on experience building end-to-end web applications and ML-powered solutions.</p>
+            <p>With a strong foundation in the MERN stack, Python, and cloud technologies, I specialize in creating intuitive user interfaces and intelligent backend systems. I completed my MERN Stack internship at Zephyr Technologies, Mangalore.</p>
+            <p><strong>Interests:</strong> Machine Learning &amp; AI, Cloud Computing, Full Stack Development</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <h2 class="sec-title"><span>My</span> <span class="cyan">Skills</span></h2>
+        <p class="sec-sub">Technologies and tools I work with</p>
+        <div class="skills-grid">
+
+          <div class="skill-panel">
+            <h3>Languages</h3>
+            <div class="skill-item"><div class="si-top"><span>JavaScript</span><span>88%</span></div><div class="bar"><div class="bar-fill" data-w="88"></div></div></div>
+            <div class="skill-item"><div class="si-top"><span>Python</span><span>85%</span></div><div class="bar"><div class="bar-fill" data-w="85"></div></div></div>
+            <div class="skill-item"><div class="si-top"><span>Java</span><span>80%</span></div><div class="bar"><div class="bar-fill" data-w="80"></div></div></div>
+            <div class="skill-item"><div class="si-top"><span>C</span><span>75%</span></div><div class="bar"><div class="bar-fill" data-w="75"></div></div></div>
+          </div>
+
+          <div class="skill-panel">
+            <h3>Frontend</h3>
+            <div class="skill-item"><div class="si-top"><span>React.js</span><span>90%</span></div><div class="bar"><div class="bar-fill" data-w="90"></div></div></div>
+            <div class="skill-item"><div class="si-top"><span>Next.js</span><span>80%</span></div><div class="bar"><div class="bar-fill" data-w="80"></div></div></div>
+            <div class="skill-item"><div class="si-top"><span>HTML/CSS</span><span>92%</span></div><div class="bar"><div class="bar-fill" data-w="92"></div></div></div>
+            <div class="skill-item"><div class="si-top"><span>Bootstrap</span><span>85%</span></div><div class="bar"><div class="bar-fill" data-w="85"></div></div></div>
+          </div>
+
+          <div class="skill-panel">
+            <h3>Backend</h3>
+            <div class="skill-item"><div class="si-top"><span>Node.js</span><span>87%</span></div><div class="bar"><div class="bar-fill" data-w="87"></div></div></div>
+            <div class="skill-item"><div class="si-top"><span>Express.js</span><span>88%</span></div><div class="bar"><div class="bar-fill" data-w="88"></div></div></div>
+            <div class="skill-item"><div class="si-top"><span>Flask</span><span>78%</span></div><div class="bar"><div class="bar-fill" data-w="78"></div></div></div>
+            <div class="skill-item"><div class="si-top"><span>REST APIs</span><span>85%</span></div><div class="bar"><div class="bar-fill" data-w="85"></div></div></div>
+          </div>
+
+          <div class="skill-panel">
+            <h3>Database &amp; Tools</h3>
+            <div class="skill-item"><div class="si-top"><span>MongoDB</span><span>85%</span></div><div class="bar"><div class="bar-fill" data-w="85"></div></div></div>
+            <div class="skill-item"><div class="si-top"><span>MySQL</span><span>82%</span></div><div class="bar"><div class="bar-fill" data-w="82"></div></div></div>
+            <div class="skill-item"><div class="si-top"><span>Git/GitHub</span><span>88%</span></div><div class="bar"><div class="bar-fill" data-w="88"></div></div></div>
+            <div class="skill-item"><div class="si-top"><span>Arduino/IoT</span><span>70%</span></div><div class="bar"><div class="bar-fill" data-w="70"></div></div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2 class="sec-title"><span>My</span> <span class="cyan">Projects</span></h2>
+        <p class="sec-sub">Explore my recent work across ML, web, and IoT</p>
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ai-ml">AI-ML</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+        </div>
+        <div class="projects-grid">
+          <div class="proj-card" data-cat="web">
+            <h3>Pic Your Insurance</h3>
+            <p>Full-stack insurance discovery platform that enables users to explore, compare, and select insurance plans through an intuitive and responsive user experience.</p>
+            <div class="proj-tags">
+              <span>React.js</span><span>JavaScript</span><span>Cloudflare Workers</span><span>Responsive UI</span>
+            </div>
+            <div class="proj-btns">
+              <a href="https://pic-your-insurence.pernajechandan.workers.dev/" target="_blank" class="btn btn-purple btn-sm">Live Demo</a>
+              <a href="https://github.com/chandanpernaje/pic-your-insurencee" target="_blank" class="btn btn-ghost btn-sm">GitHub</a>
+            </div>
+          </div>
+
+
+          <div class="proj-card" data-cat="ai-ml">
+            <h3>OfficeCalmChat</h3>
+            <p>AI-powered workplace wellness chatbot using Google Gemini LLM. Features hidden admin/developer analysis prompts, multilingual support (English &amp; Kannada), and a FastAPI backend serving a clean web UI.</p>
+            <div class="proj-tags">
+              <span>Python</span><span>FastAPI</span><span>Gemini API</span><span>Unicorn</span><span>HTML</span><span>CSS</span>
+            </div>
+            <div class="proj-btns">
+              <a href="https://office-calm-chatbot.vercel.app" target="_blank" class="btn btn-purple btn-sm">Live Demo</a>
+              <a href="https://github.com/chandanpernaje/office-calm-chatbot" target="_blank" class="btn btn-ghost btn-sm">GitHub</a>
+            </div>
+          </div>
+
+          <div class="proj-card" data-cat="ai-ml">
+            <h3>Used Car Price Prediction</h3>
+            <p>Full-stack ML web app that predicts used car prices using a Random Forest regression model. Features Flask backend, user authentication, admin panel for managing listings, data visualization, and a clean web UI.</p>
+            <div class="proj-tags">
+              <span>Python</span><span>Flask</span><span>scikit-learn</span><span>Random Forest</span><span>Pandas</span><span>Jupyter</span><span>HTML/CSS</span>
+            </div>
+            <div class="proj-btns">
+              <a href="https://mlbased-used-car-price-prediction-1.onrender.com/" target="_blank" class="btn btn-purple btn-sm">Live Demo</a>
+              <a href="https://github.com/chandanpernaje/mlbased-used-car--price-prediction" target="_blank" class="btn btn-ghost btn-sm">GitHub</a>
+            </div>
+          </div>
+
+          <div class="proj-card" data-cat="web">
+            <h3>Real Estate Website</h3>
+            <p>Full-stack real estate management web app with property listing, booking, admin/user roles, filtering, and authentication.</p>
+            <div class="proj-tags">
+              <span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span>
+            </div>
+            <div class="proj-btns">
+              <a href="https://mern-based-estaes.vercel.app" target="_blank" class="btn btn-purple btn-sm">Live Demo</a>
+              <a href="https://github.com/chandanpernaje/mern-based-estaes" target="_blank" class="btn btn-ghost btn-sm">GitHub</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section reveal">
+      <div class="container text-center">
+        <h2 class="sec-title centered"><span>My</span> <span class="cyan">Resume</span></h2>
+        <p class="sec-sub">Download my resume to learn more about my experience and qualifications</p>
+        <div class="resume-btns">
+          <a href="/Chandan_Kumar_Resume.pdf" target="_blank" class="btn btn-outline-w"><i data-lucide="eye"></i> View Resume</a>
+          <a href="/Chandan_Kumar_Resume.pdf" class="btn btn-purple" download><i data-lucide="download"></i> Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2 class="sec-title centered"><span>Get in</span> <span class="cyan">Touch</span></h2>
+        <p class="sec-sub">Have a project in mind? Let's work together</p>
+        <div class="contact-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="cname">Name</label>
+              <input type="text" id="cname" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="cemail">Email</label>
+              <input type="email" id="cemail" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="cmessage">Message</label>
+              <textarea id="cmessage" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-purple btn-full" id="submitBtn">Send Message</button>
+            <div class="form-success" id="formSuccess">
+              <i data-lucide="check-circle"></i> Message sent successfully!
+            </div>
+          </form>
+          <div class="contact-info-bottom">
+            <p><i data-lucide="mail"></i> pernajechandan@gmail.com</p>
+            <p><i data-lucide="phone"></i> +91 8277340643 | +91 8660453030</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="https://github.com/chandanpernaje" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <p>Designed &amp; Built by <span class="cyan">Chandan Kumar P</span></p>
+      </div>
+      <div class="footer-right">
+        <p>&copy; 2026 Chandan Kumar P. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTopBtn" aria-label="Scroll to top"><i data-lucide="chevron-up"></i></button>
+
+  <script type="module" src="/src/main.js"></script>
+  <script>window.addEventListener('load', () => lucide.createIcons());</script>
+</body>
+</html>
