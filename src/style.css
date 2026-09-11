@@ -322,6 +322,58 @@ nav {
   transition: width 1s ease;
 }
 
+/* ── DEPLOYMENT ── */
+.deploy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 640px) {
+  .deploy-grid { grid-template-columns: 1fr; }
+}
+
+.deploy-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: border-color var(--ease), transform var(--ease), box-shadow var(--ease);
+}
+.deploy-card:hover {
+  border-color: var(--purple-lt);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(124,58,237,.2);
+}
+
+.deploy-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(124,58,237,.1);
+  color: var(--purple-lt);
+  transition: all var(--ease);
+}
+.deploy-icon i {
+  width: 24px;
+  height: 24px;
+}
+.deploy-card:hover .deploy-icon {
+  background: var(--purple);
+  color: #fff;
+}
+
+.deploy-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--white);
+}
+
 /* ── PROJECTS ── */
 .filter-tabs {
   display: flex;
